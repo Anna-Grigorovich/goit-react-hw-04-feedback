@@ -92,7 +92,7 @@ export const App = () => {
         />
       </Section>
 
-      <Section title="Statistics">
+      <Section>
         {countTotalFeedback() > 0 ? (
           <Statistics
             good={good}
