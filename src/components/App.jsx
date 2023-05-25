@@ -85,9 +85,9 @@ export const App = () => {
 
   return (
     <div className={css.App}>
-      <Section title="Please leave feedback">
+      <Section>
         <FeedbackOptions
-          options={{ good, neutral, bad }}
+          options={Object.keys({ good, neutral, bad })}
           onLeaveFeedback={onLeaveFeedback}
         />
       </Section>

@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  const btnNames = Object.keys(options);
+  // const btnNames = Object.keys(options);
 
   return (
     <div className={css.feedback}>
       <h1 className={css.feedback__title}>Please leave feedback</h1>
       <div>
-        {btnNames.map(btn => (
+        {options.map(btn => (
           <button
             type="button"
             key={btn}
